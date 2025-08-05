@@ -26,5 +26,5 @@ variable "tags" {
 
 variable "availability_zone" {
   type        = string
-  description = "AZ to place public subnet"
+  description = "AWS AZ"
 }

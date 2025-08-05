@@ -1,6 +1,7 @@
 aws_region         = "us-east-1"
 ami_id             = "ami-020cba7c55df1f615"
 availability_zone  = "us-east-1a"
+instance_type      = "t3.micro"
 key_name           = "TerraformKey"
 name_prefix        = "dev"
 vpc_cidr           = "10.1.0.0/16"
