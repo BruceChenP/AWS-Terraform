@@ -41,3 +41,9 @@ variable "key_name" {
   description = "SSH key pair name for EC2"
   type        = string
 }
+
+variable "ec2_count" {
+  description = "Number of EC2 instances to launch"
+  type        = number
+  default     = 1
+}

@@ -6,6 +6,7 @@ key_name           = "TerraformKey"
 name_prefix        = "dev"
 vpc_cidr           = "10.1.0.0/16"
 public_subnet_cidr = "10.1.0.0/24"
+ec2_count          = 3
 extra_tags         = {
   Environment = "dev"
   Project     = "terraform-side-project"

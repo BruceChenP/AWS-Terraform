@@ -42,3 +42,9 @@ variable "instance_type" {
   description = "EC2 Instance Type"
   type        = string
 }
+
+variable "ec2_count" {
+  description = "Number of EC2 instances to launch"
+  type        = number
+  default     = 1
+}
