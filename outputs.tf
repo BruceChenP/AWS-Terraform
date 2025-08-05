@@ -8,12 +8,14 @@ output "public_subnet_id" {
   value       = module.vpc.public_subnet_id
 }
 
-output "instance_id" {
-  description = "EC2 instance ID"
-  value       = module.ec2.instance_id
+output "ec2_instance_ids" {
+  value = module.ec2[*].instance_ids
 }
 
-output "instance_public_ip" {
-  description = "EC2 instance public IP"
-  value       = module.ec2.public_ip
+output "ec2_public_ips" {
+  value = module.ec2[*].public_ips
+}
+
+output "ec2_private_ips" {
+  value = module.ec2[*].private_ips
 }
