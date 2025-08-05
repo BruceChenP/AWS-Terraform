@@ -11,7 +11,7 @@ module "vpc" {
 module "ec2" {
   source                      = "./modules/ec2"
   ami                         = var.ami_id
-  instance_type               = "t3.micro"
+  instance_type               = var.instance_type
   subnet_id                   = module.vpc.public_subnet_id
   security_group_ids          = [module.vpc.security_group_id]
   name                        = "${var.name_prefix}-instance"
